@@ -6,44 +6,65 @@ using System;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Timer")]
+    Timer timer;
+
     [Header("Questions")]
-    [SerializeField] private TextMeshProUGUI questionText;
     private QuestionSO currentQuestion;
     [SerializeField] List<QuestionSO> questionList;
+    [SerializeField] private TextMeshProUGUI questionText;
 
     [Header("Answers")]
     [SerializeField] private GameObject[] answerButton;
-    private bool hasAnsweredEarly;
+    private bool hasAnsweredEarly = true;
     
     [Header("Buttons")]
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private Sprite correctAnswerSprite;
 
-    [Header("Timer")]
-    Timer timer;
+    [Header("Scoring")]
+    [SerializeField] TextMeshProUGUI score;
+    ScoreKeeper scoreKeeper;
 
-    void Start()
+    [SerializeField] Slider progressBar;
+    public bool isComplete;
+
+    void Awake()
     {
-        timer  = FindAnyObjectByType<Timer>();
-        questionText.text = currentQuestion.Question;
-        for (int i = 0; i < answerButton.Length; i++)
-        {
-            answerButton[i].GetComponentInChildren<TextMeshProUGUI>().text = currentQuestion.GetAnswer(i);
-        }
+        timer = FindAnyObjectByType<Timer>();
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
+        progressBar = FindAnyObjectByType<Slider>();
+        progressBar.maxValue = questionList.Count;
+        progressBar.value = 0;
     }
 
     void Update()
     {
         if(timer.loadNextQuestion)
         {
+            if(progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                return;
+            }
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
         }
-        else if (!hasAnsweredEarly && !timer.isAnsweringQuestions)
+        // If player didn't answer in time and timer ran out, show answer and disable buttons
+        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
             DisplayAnswer(-1);
             SetButtonState(false);
+        }
+    }
+
+    private void DisplayQuestion()
+    {
+        questionText.text = currentQuestion.Question;
+        for (int i = 0; i < answerButton.Length; i++)
+        {
+             answerButton[i].GetComponentInChildren<TextMeshProUGUI>().text = currentQuestion.GetAnswer(i);
         }
     }
 
@@ -54,6 +75,9 @@ public class Quiz : MonoBehaviour
             SetButtonState(true);
             SetDefaultButtonSprites();
             GetRandomQuestion();
+            DisplayQuestion();
+            scoreKeeper.QuestionsSeen = 1; // Increment Qs seen
+            progressBar.value++;
         }
     }
 
@@ -61,14 +85,7 @@ public class Quiz : MonoBehaviour
     {
         int random = UnityEngine.Random.Range(0, questionList.Count);
         currentQuestion = questionList[random];
-        try
-        {
-            questionList.Remove(currentQuestion);
-        }
-        catch (System.Exception)
-        {
-            Debug.Log("Question {questionList.Remove(currentQuestion)} not found");
-        }
+        questionList.Remove(currentQuestion);
     }
 
     private void SetDefaultButtonSprites()
@@ -86,6 +103,7 @@ public class Quiz : MonoBehaviour
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
+        score.text = $"Score: {scoreKeeper.CalculateScore()}%";
     }
 
     private void DisplayAnswer(int index)
@@ -96,6 +114,7 @@ public class Quiz : MonoBehaviour
             questionText.text = "Correct";
             buttonImage = answerButton[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
+            scoreKeeper.CorrectAnswers = 1; // Inc. right answer
         }
         else
         {

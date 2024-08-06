@@ -5,18 +5,14 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private Image timerImage;
     [SerializeField] private float timeToAnswer = 10f;
-    [SerializeField] private float timeToCompleteQuestion = 5f;
+    [SerializeField] private float timeToReviewAnswer = 5f;
     public float timerValue;
-    public bool isAnsweringQuestions = true; // start the game with time to answer a Q
+    public bool isAnsweringQuestion;
     public bool loadNextQuestion;
     
     void Update()
     {
         UpdateTimer();
-        // what state is the game in
-        // how long to answer Q
-        // has time run out
-        // if timer has run out, change state
     }
 
     public void CancelTimer()
@@ -27,24 +23,24 @@ public class Timer : MonoBehaviour
     void UpdateTimer()
     {
         timerValue -= Time.deltaTime;
-        if (isAnsweringQuestions)
+        if (isAnsweringQuestion)
         {
-            if (timerValue <= 0)
+            if (timerValue > 0) timerImage.fillAmount = timerValue / timeToAnswer;
+            else 
             {
-                isAnsweringQuestions = false;
-                timerValue = timeToCompleteQuestion;
+                isAnsweringQuestion = false;
+                timerValue = timeToReviewAnswer;
             }
-            else timerImage.fillAmount = timerValue / timeToAnswer;
         }
         else
         {
-            if (timerValue <= 0)
+            if (timerValue > 0) timerImage.fillAmount = timerValue / timeToReviewAnswer;
+            else
             {
-                isAnsweringQuestions = true;
+                isAnsweringQuestion = true;
                 timerValue = timeToAnswer;
                 loadNextQuestion = true;
             }
-            else timerImage.fillAmount = timerValue / timeToCompleteQuestion;
         }
     }
 }
