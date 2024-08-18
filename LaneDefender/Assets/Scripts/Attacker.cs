@@ -14,4 +14,9 @@ public class Attacker : MonoBehaviour
     {
         currentSpeed = speed;
     }
+
+    void ActivateCollision()
+    {
+        GetComponent<CapsuleCollider2D>().enabled = true;
+    }
 }
