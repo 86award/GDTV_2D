@@ -104,6 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 3
   rotationAmount: {x: 0, y: 0, z: -360}
+  projectileDmg: 50
+  collisionFX: {fileID: 536173783624045388, guid: 0f546e84c869528469126f1f33fd71c2, type: 3}
 --- !u!60 &7578155006337890414
 PolygonCollider2D:
   m_ObjectHideFlags: 0

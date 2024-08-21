@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class AttackerHealth : MonoBehaviour
 {
     [SerializeField] int startingHealth = 100;
     [SerializeField] private int health;
+    [SerializeField] private GameObject collisionVFX;
 
     private void Awake()
     {
@@ -15,7 +17,14 @@ public class AttackerHealth : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            TriggerCollisionVFX();
             Destroy(gameObject);
         }
+    }
+
+    private void TriggerCollisionVFX()
+    {
+        GameObject vfxObject = Instantiate(collisionVFX, transform.position, transform.rotation);
+        Destroy(vfxObject, 1f);
     }
 }

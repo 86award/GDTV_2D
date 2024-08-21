@@ -5,6 +5,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projectileSpeed = 3;
     [SerializeField] Vector3 rotationAmount = new Vector3(0, 0, -360);
     [SerializeField] int projectileDmg = 50;
+    //[SerializeField] ParticleSystem collisionFX;
 
     private void Update()
     {
@@ -17,7 +18,7 @@ public class Projectile : MonoBehaviour
         if (collision.tag == "Attacker")
         {
             Destroy(gameObject);
-            // play particle effect
+            //Instantiate(collisionFX, collision.transform.position, collision.transform.rotation);
             collision.GetComponent<AttackerHealth>().DealDamage(projectileDmg);
         }
     }
