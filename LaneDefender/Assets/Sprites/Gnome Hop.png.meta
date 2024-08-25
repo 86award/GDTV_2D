@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 125
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gnome Hop_0: 8532853575984537022
+      Gnome Hop_1: -5672886484280828777
+      Gnome Hop_10: -7122136188106420382
+      Gnome Hop_11: -1414849632348080125
+      Gnome Hop_2: 657327705973076454
+      Gnome Hop_3: 2316559351308807121
+      Gnome Hop_4: 259241948786745635
+      Gnome Hop_5: -5187855032976046438
+      Gnome Hop_6: -2024161416504286770
+      Gnome Hop_7: -7122400225289531641
+      Gnome Hop_8: 7012729498918721938
+      Gnome Hop_9: 471822915718253400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

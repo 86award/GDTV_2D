@@ -4,44 +4,48 @@ using UnityEngine.InputSystem;
 
 public class SpawnDefender : MonoBehaviour
 {
-    Defender defender = null;
-    [SerializeField] Collider2D areaCollider;
+    Defender defender;
+    BoxCollider2D areaCollider;
 
     private void Awake()
     {
-        //areaCollider = GetComponent<BoxCollider2D>();// as Collider2D;
+        areaCollider = GetComponent<BoxCollider2D>();
     }
 
-    //Called in the DefenderButton script to set the prefab to be placed
-    public void SetSelectedDefnder(Defender defenderToSelect)
-    {
-        defender = defenderToSelect;
-    }
     //There's a magic number here for the z co-ord
-    private Vector3 ClickedLocation()
+    private Vector2 ClickedLocation()
     {
-        Vector3 rawMousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 20f);
-        Vector3 uiMousePos = Camera.main.ScreenToWorldPoint(rawMousePos);
+        Vector2 rawMousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);//, 20f);
+        Vector2 uiMousePos = Camera.main.ScreenToWorldPoint(rawMousePos);
         return uiMousePos;
     }
 
     void OnAttack()
     {
-        Vector3 modifiedWorldSpace = ClickedLocation() + new Vector3(-5, -3, 0);
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.transform.position, modifiedWorldSpace);
-        Debug.DrawRay(Camera.main.transform.position, modifiedWorldSpace, Color.red, 30f);
-        Debug.Log(hit.collider.gameObject.tag);
+        //Vector3 modifiedWorldSpace = ClickedLocation() + new Vector2(-5, -3);//, 11f); //compensate for camera offset
 
-        if (true)//hit.collider.gameObject.tag == "Game Area")
+        //Something is happening here to make the ray fire straight forward from the camera like 0,0,1
+        //RaycastHit2D hit = Physics2D.Raycast((Vector2)Camera.main.transform.position, modifiedWorldSpace);
+        //Debug.DrawRay(Camera.main.transform.position, modifiedWorldSpace, Color.red, 30f);
+
+        //what if I shoot from the mouse position foward
+        //RaycastHit2D hit = Physics2D.Raycast(modifiedWorldSpace, Vector3.forward);
+        //Debug.DrawRay(modifiedWorldSpace, hit.point, Color.red, 30f);
+
+        //or perhaps just from the raw clicked location
+        RaycastHit2D hit = Physics2D.Raycast(ClickedLocation(), Vector3.forward);
+        Debug.DrawRay((Vector3)ClickedLocation() + new Vector3(0, 0, -10), (Vector3)hit.point + new Vector3(0,0,10f), Color.red, 30f);
+
+        if (hit.collider == areaCollider)
         {
-            if (areaCollider.OverlapPoint(ClickedLocation()))
-            {
+            //if (areaCollider.OverlapPoint(ClickedLocation()))
+            //{
                 AttemptToPlaceDefenderAt(ClickedLocation());
-            } 
+            //} 
         }
     }
 
-    public void AttemptToPlaceDefenderAt(Vector3 gridPos)
+    public void AttemptToPlaceDefenderAt(Vector2 gridPos)
     {
         var starDisplay = FindAnyObjectByType<StarDisplay>();
         int defenderCost = defender.StarCost;
@@ -65,5 +69,11 @@ public class SpawnDefender : MonoBehaviour
         int newY = Mathf.RoundToInt(screenClickLocation.y);
         Vector3 roundedLocation = new Vector3(newX, newY, screenClickLocation.z);
         return roundedLocation;
+    }
+
+    //Called in the DefenderButton script to set the prefab to be placed
+    public void SetSelectedDefnder(Defender defenderToSelect)
+    {
+        defender = defenderToSelect;
     }
 }
