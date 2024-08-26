@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AttackerHealth : MonoBehaviour
 {
-    [SerializeField] int startingHealth = 100;
+    [SerializeField] int startingHealth;
     [SerializeField] private int health;
     [SerializeField] private GameObject collisionVFX;
 

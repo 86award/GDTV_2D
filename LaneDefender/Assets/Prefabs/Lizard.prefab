@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 846529863197416280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.325, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,7 +99,9 @@ GameObject:
   - component: {fileID: 5696676093960618175}
   - component: {fileID: 7535375231662863288}
   - component: {fileID: 5596348229604674496}
-  - component: {fileID: 1791789282519949858}
+  - component: {fileID: 7265239836974412663}
+  - component: {fileID: 4359276429439569271}
+  - component: {fileID: 5603436348268415276}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Attacker
@@ -130,7 +132,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7512673093460020116}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -153,11 +155,11 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.6445041, y: -0.16954672}
+  m_Offset: {x: -0.6445041, y: 0.01}
   m_Size: {x: 0.5089693, y: 0.6393659}
   m_Direction: 0
 --- !u!95 &7535375231662863288
@@ -195,7 +197,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
---- !u!114 &1791789282519949858
+--- !u!114 &7265239836974412663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512673093460020116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7a3356e69249141b6aa844bc67f412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4359276429439569271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,6 +221,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759de011539ff9743bbc91b271f11b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 500
   health: 0
   collisionVFX: {fileID: 8511412802764442769, guid: 0f546e84c869528469126f1f33fd71c2, type: 3}
+--- !u!50 &5603436348268415276
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512673093460020116}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

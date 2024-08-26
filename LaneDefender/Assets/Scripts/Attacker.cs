@@ -4,6 +4,7 @@ public class Attacker : MonoBehaviour
 {
     //[Range(0f, 15f)]
     [SerializeField] private float currentSpeed;
+    GameObject currentTarget;
 
     void Update()
     {
@@ -17,6 +18,12 @@ public class Attacker : MonoBehaviour
 
     void ActivateCollision()
     {
-        GetComponent<CapsuleCollider2D>().enabled = true;
+        GetComponent<Collider2D>().enabled = true;
+    }
+
+    public void Attack(GameObject target)
+    {
+        GetComponent<Animator>().SetBool("isAttacking", true);
+        currentTarget = target;
     }
 }
