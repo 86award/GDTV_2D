@@ -132,7 +132,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 133
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -210,10 +210,10 @@ TextureImporter:
       name: Fox Jump_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 565
-        width: 120
-        height: 47
+        x: 0
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: Fox Jump_1
       rect:
         serializedVersion: 2
-        x: 171
-        y: 566
-        width: 116
-        height: 52
+        x: 153
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Fox Jump_2
       rect:
         serializedVersion: 2
-        x: 342
-        y: 567
-        width: 94
-        height: 90
+        x: 306
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Fox Jump_3
       rect:
         serializedVersion: 2
-        x: 489
-        y: 587
-        width: 97
-        height: 77
+        x: 459
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +298,10 @@ TextureImporter:
       name: Fox Jump_4
       rect:
         serializedVersion: 2
-        x: 637
-        y: 601
-        width: 99
-        height: 74
+        x: 612
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: Fox Jump_5
       rect:
         serializedVersion: 2
-        x: 786
-        y: 611
-        width: 101
-        height: 75
+        x: 765
+        y: 556
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Fox Jump_6
       rect:
         serializedVersion: 2
-        x: 20
-        y: 479
-        width: 106
-        height: 72
+        x: 0
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,10 +364,10 @@ TextureImporter:
       name: Fox Jump_7
       rect:
         serializedVersion: 2
-        x: 174
-        y: 488
-        width: 109
-        height: 68
+        x: 153
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: Fox Jump_8
       rect:
         serializedVersion: 2
-        x: 328
-        y: 498
-        width: 111
-        height: 59
+        x: 306
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,10 +408,10 @@ TextureImporter:
       name: Fox Jump_9
       rect:
         serializedVersion: 2
-        x: 480
-        y: 498
-        width: 112
-        height: 57
+        x: 459
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,10 +430,10 @@ TextureImporter:
       name: Fox Jump_10
       rect:
         serializedVersion: 2
-        x: 632
-        y: 501
-        width: 113
-        height: 46
+        x: 612
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,10 +452,10 @@ TextureImporter:
       name: Fox Jump_11
       rect:
         serializedVersion: 2
-        x: 783
-        y: 493
-        width: 113
-        height: 47
+        x: 765
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,10 +474,10 @@ TextureImporter:
       name: Fox Jump_12
       rect:
         serializedVersion: 2
-        x: 15
-        y: 338
-        width: 109
-        height: 60
+        x: 0
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: Fox Jump_13
       rect:
         serializedVersion: 2
-        x: 165
-        y: 315
-        width: 102
-        height: 80
+        x: 153
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,10 +518,10 @@ TextureImporter:
       name: Fox Jump_14
       rect:
         serializedVersion: 2
-        x: 316
-        y: 288
-        width: 89
-        height: 96
+        x: 306
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Fox Jump_15
       rect:
         serializedVersion: 2
-        x: 468
-        y: 287
-        width: 100
-        height: 87
+        x: 459
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: Fox Jump_16
       rect:
         serializedVersion: 2
-        x: 621
-        y: 287
-        width: 109
-        height: 77
+        x: 612
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: Fox Jump_17
       rect:
         serializedVersion: 2
-        x: 775
-        y: 287
-        width: 120
-        height: 33
+        x: 765
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,10 +606,10 @@ TextureImporter:
       name: Fox Jump_18
       rect:
         serializedVersion: 2
-        x: 10
-        y: 138
-        width: 116
-        height: 41
+        x: 0
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +628,10 @@ TextureImporter:
       name: Fox Jump_19
       rect:
         serializedVersion: 2
-        x: 164
-        y: 141
-        width: 116
-        height: 39
+        x: 153
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,10 +650,10 @@ TextureImporter:
       name: Fox Jump_20
       rect:
         serializedVersion: 2
-        x: 316
-        y: 146
-        width: 120
-        height: 35
+        x: 306
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +672,10 @@ TextureImporter:
       name: Fox Jump_21
       rect:
         serializedVersion: 2
-        x: 469
-        y: 148
-        width: 122
-        height: 40
+        x: 459
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +694,10 @@ TextureImporter:
       name: Fox Jump_22
       rect:
         serializedVersion: 2
-        x: 621
-        y: 148
-        width: 123
-        height: 47
+        x: 612
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,10 +716,10 @@ TextureImporter:
       name: Fox Jump_23
       rect:
         serializedVersion: 2
-        x: 774
-        y: 148
-        width: 122
-        height: 51
+        x: 765
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: Fox Jump_24
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 123
-        height: 50
+        x: 0
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,10 +760,10 @@ TextureImporter:
       name: Fox Jump_25
       rect:
         serializedVersion: 2
-        x: 162
-        y: 9
-        width: 122
-        height: 49
+        x: 153
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: Fox Jump_26
       rect:
         serializedVersion: 2
-        x: 315
-        y: 9
-        width: 123
-        height: 48
+        x: 306
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Fox Jump_27
       rect:
         serializedVersion: 2
-        x: 468
-        y: 9
-        width: 123
-        height: 47
+        x: 459
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,7 +826,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28d62dd9a36206a43985464de215c613
     internalID: 0
     vertices: []
     indices: 
@@ -835,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox Jump_0: 3574847051743030441
+      Fox Jump_1: -4825974039586952881
+      Fox Jump_10: -5274253688197188781
+      Fox Jump_11: -2014802332116763029
+      Fox Jump_12: -8542986598768599023
+      Fox Jump_13: 1895851617272342781
+      Fox Jump_14: 8759160383606020271
+      Fox Jump_15: 3567572022897867947
+      Fox Jump_16: 2789166413554905566
+      Fox Jump_17: -1784994958234630845
+      Fox Jump_18: 6043662283957070822
+      Fox Jump_19: 7968785280044236153
+      Fox Jump_2: -8049898823471573670
+      Fox Jump_20: 5836492112489044017
+      Fox Jump_21: 5120210764112384961
+      Fox Jump_22: 7087334483648362703
+      Fox Jump_23: -916961800633767298
+      Fox Jump_24: 4209958018717634995
+      Fox Jump_25: 453941256070748476
+      Fox Jump_26: 3996573758587980212
+      Fox Jump_27: 7527401686257822748
+      Fox Jump_3: 2018178189912915148
+      Fox Jump_4: -2755340144835460296
+      Fox Jump_5: 3482572464398073299
+      Fox Jump_6: 4236267675253303970
+      Fox Jump_7: 4945806229976530522
+      Fox Jump_8: 1684972804003008202
+      Fox Jump_9: -7634059773975050168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

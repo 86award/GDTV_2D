@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 133
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -198,10 +198,10 @@ TextureImporter:
       name: Fox Walking_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 426
-        width: 123
-        height: 47
+        x: 0
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: Fox Walking_1
       rect:
         serializedVersion: 2
-        x: 161
-        y: 426
-        width: 124
-        height: 47
+        x: 153
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: Fox Walking_2
       rect:
         serializedVersion: 2
-        x: 315
-        y: 426
-        width: 123
-        height: 47
+        x: 306
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: Fox Walking_3
       rect:
         serializedVersion: 2
-        x: 468
-        y: 426
-        width: 123
-        height: 48
+        x: 459
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: Fox Walking_4
       rect:
         serializedVersion: 2
-        x: 621
-        y: 427
-        width: 123
-        height: 47
+        x: 612
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: Fox Walking_5
       rect:
         serializedVersion: 2
-        x: 775
-        y: 427
-        width: 121
-        height: 47
+        x: 765
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: Fox Walking_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 288
-        width: 122
-        height: 47
+        x: 0
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: Fox Walking_7
       rect:
         serializedVersion: 2
-        x: 163
-        y: 288
-        width: 121
-        height: 47
+        x: 153
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: Fox Walking_8
       rect:
         serializedVersion: 2
-        x: 315
-        y: 288
-        width: 123
-        height: 47
+        x: 306
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: Fox Walking_9
       rect:
         serializedVersion: 2
-        x: 469
-        y: 288
-        width: 122
-        height: 47
+        x: 459
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: Fox Walking_10
       rect:
         serializedVersion: 2
-        x: 621
-        y: 288
-        width: 123
-        height: 46
+        x: 612
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: Fox Walking_11
       rect:
         serializedVersion: 2
-        x: 774
-        y: 288
-        width: 123
-        height: 46
+        x: 765
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: Fox Walking_12
       rect:
         serializedVersion: 2
-        x: 9
-        y: 148
-        width: 123
-        height: 47
+        x: 0
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: Fox Walking_13
       rect:
         serializedVersion: 2
-        x: 161
-        y: 148
-        width: 124
-        height: 47
+        x: 153
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: Fox Walking_14
       rect:
         serializedVersion: 2
-        x: 315
-        y: 148
-        width: 123
-        height: 47
+        x: 306
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: Fox Walking_15
       rect:
         serializedVersion: 2
-        x: 468
-        y: 148
-        width: 123
-        height: 48
+        x: 459
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,10 +550,10 @@ TextureImporter:
       name: Fox Walking_16
       rect:
         serializedVersion: 2
-        x: 621
-        y: 148
-        width: 123
-        height: 48
+        x: 612
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: Fox Walking_17
       rect:
         serializedVersion: 2
-        x: 775
-        y: 148
-        width: 121
-        height: 48
+        x: 765
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
       name: Fox Walking_18
       rect:
         serializedVersion: 2
-        x: 10
-        y: 9
-        width: 122
-        height: 48
+        x: 0
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,10 +616,10 @@ TextureImporter:
       name: Fox Walking_19
       rect:
         serializedVersion: 2
-        x: 163
-        y: 9
-        width: 121
-        height: 48
+        x: 153
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: Fox Walking_20
       rect:
         serializedVersion: 2
-        x: 315
-        y: 9
-        width: 123
-        height: 48
+        x: 306
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,10 +660,10 @@ TextureImporter:
       name: Fox Walking_21
       rect:
         serializedVersion: 2
-        x: 468
-        y: 9
-        width: 123
-        height: 47
+        x: 459
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,10 +682,10 @@ TextureImporter:
       name: Fox Walking_22
       rect:
         serializedVersion: 2
-        x: 621
-        y: 9
-        width: 123
-        height: 47
+        x: 612
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,10 +704,10 @@ TextureImporter:
       name: Fox Walking_23
       rect:
         serializedVersion: 2
-        x: 774
-        y: 9
-        width: 123
-        height: 47
+        x: 765
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,7 +726,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9467dc0d3853bb844845066c081caa1f
     internalID: 0
     vertices: []
     indices: 
@@ -735,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox Walking_0: 1150964161710832084
+      Fox Walking_1: -5062339417134324684
+      Fox Walking_10: -2949590239931843451
+      Fox Walking_11: -8075445861559157891
+      Fox Walking_12: 2135366010130498299
+      Fox Walking_13: 8236011914418372855
+      Fox Walking_14: 1448194855523774678
+      Fox Walking_15: -6975178878038751613
+      Fox Walking_16: -5311934848019547296
+      Fox Walking_17: 901910552704744478
+      Fox Walking_18: -4819751911530972445
+      Fox Walking_19: 8117423152785385804
+      Fox Walking_2: -2468473409954516976
+      Fox Walking_20: -7521790170767476523
+      Fox Walking_21: 2432968570211337888
+      Fox Walking_22: -8330695611408317492
+      Fox Walking_23: 1187552709326016759
+      Fox Walking_3: -2791069648256494988
+      Fox Walking_4: -6268024693252013089
+      Fox Walking_5: 7534969848853636512
+      Fox Walking_6: -169190099883843842
+      Fox Walking_7: 4487901710494312207
+      Fox Walking_8: 6056114361640290729
+      Fox Walking_9: -7350464110744688983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

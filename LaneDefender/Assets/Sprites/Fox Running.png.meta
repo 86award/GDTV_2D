@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 133
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -162,10 +162,10 @@ TextureImporter:
       name: Fox Running_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 151
-        width: 130
-        height: 46
+        x: 0
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Fox Running_1
       rect:
         serializedVersion: 2
-        x: 162
-        y: 151
-        width: 129
-        height: 45
+        x: 153
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: Fox Running_2
       rect:
         serializedVersion: 2
-        x: 314
-        y: 150
-        width: 129
-        height: 45
+        x: 306
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: Fox Running_3
       rect:
         serializedVersion: 2
-        x: 467
-        y: 150
-        width: 126
-        height: 45
+        x: 459
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: Fox Running_4
       rect:
         serializedVersion: 2
-        x: 620
-        y: 150
-        width: 133
-        height: 45
+        x: 612
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: Fox Running_5
       rect:
         serializedVersion: 2
-        x: 774
-        y: 148
-        width: 133
-        height: 46
+        x: 765
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: Fox Running_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 12
-        width: 131
-        height: 43
+        x: 0
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: Fox Running_7
       rect:
         serializedVersion: 2
-        x: 164
-        y: 12
-        width: 131
-        height: 44
+        x: 153
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +338,10 @@ TextureImporter:
       name: Fox Running_8
       rect:
         serializedVersion: 2
-        x: 319
-        y: 13
-        width: 129
-        height: 43
+        x: 306
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: Fox Running_9
       rect:
         serializedVersion: 2
-        x: 471
-        y: 12
-        width: 131
-        height: 45
+        x: 459
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +382,10 @@ TextureImporter:
       name: Fox Running_10
       rect:
         serializedVersion: 2
-        x: 624
-        y: 10
-        width: 135
-        height: 48
+        x: 612
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: Fox Running_11
       rect:
         serializedVersion: 2
-        x: 776
-        y: 11
-        width: 136
-        height: 47
+        x: 765
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,7 +426,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ce13620e35f13b746b37fb8e7ca70f59
     internalID: 0
     vertices: []
     indices: 
@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox Running_0: 8189650667827876979
+      Fox Running_1: -5447189599148108117
+      Fox Running_10: -7722825254393066200
+      Fox Running_11: -4355890550225760130
+      Fox Running_2: 2411212283926625588
+      Fox Running_3: 4183376534722103051
+      Fox Running_4: 1878933213425258762
+      Fox Running_5: -2102101676120516931
+      Fox Running_6: -1248797723352466313
+      Fox Running_7: -9066932197608732810
+      Fox Running_8: -555244608545739551
+      Fox Running_9: 3294793243138151688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

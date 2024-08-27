@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour
@@ -9,6 +10,15 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * (currentSpeed * Time.deltaTime));
+        UpdateAnimationState();
+    }
+
+    private void UpdateAnimationState()
+    {
+        if (!currentTarget)
+        {
+            GetComponent<Animator>().SetBool("isAttacking", false);
+        }
     }
 
     void SetMovementSpeed(float speed)
@@ -25,5 +35,15 @@ public class Attacker : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("isAttacking", true);
         currentTarget = target;
+    }
+
+    public void StrikeCurrentTarget(int damage)
+    {
+        if (!currentTarget) return;
+        Health health = currentTarget.GetComponent<Health>();
+        if (health)
+        {
+            health.DealDamage(damage);
+        }
     }
 }

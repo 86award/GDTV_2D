@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      obj_glitchGarden_treeR_0: -9118831374694199991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

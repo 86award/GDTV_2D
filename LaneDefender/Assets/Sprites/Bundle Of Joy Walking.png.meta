@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bundle Of Joy Walking_0: -5114774658807883666
+      Bundle Of Joy Walking_1: 8425663781997108602
+      Bundle Of Joy Walking_2: -5483261266598968425
+      Bundle Of Joy Walking_3: 714446048858569827
+      Bundle Of Joy Walking_4: -9122710615001172338
+      Bundle Of Joy Walking_5: 4530939391543268796
+      Bundle Of Joy Walking_6: 4301019014204911935
+      Bundle Of Joy Walking_7: 325857749381199794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

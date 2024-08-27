@@ -1,17 +1,28 @@
 using UnityEngine;
 
-public class Lizard : MonoBehaviour
+public class Fox : MonoBehaviour
 {
     [SerializeField] int livesToSubtract;
-
-    private void Update()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-
+        
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         GameObject otherObject = otherCollider.gameObject;
-        if (otherObject.GetComponent<Defender>())
+        if (otherObject.GetComponent<Gravestone>())
+        {
+            GetComponent<Animator>().SetTrigger("jumpTrigger");
+        }
+        else if (otherObject.GetComponent<Defender>())
         {
             GetComponent<Attacker>().Attack(otherObject);
         }

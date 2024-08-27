@@ -510,7 +510,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jabba Walking_0: -8898071222588902783
+      Jabba Walking_1: 8298084095177405490
+      Jabba Walking_10: -8146032167771056869
+      Jabba Walking_11: -1807585389387087921
+      Jabba Walking_12: 4611551433992501798
+      Jabba Walking_13: 8814104414533706894
+      Jabba Walking_14: -2106685000583540032
+      Jabba Walking_2: -7963612708707547389
+      Jabba Walking_3: -7610526614286523004
+      Jabba Walking_4: 4702092881318482462
+      Jabba Walking_5: 2356062786193476842
+      Jabba Walking_6: 2079731245301866431
+      Jabba Walking_7: 984936302769476046
+      Jabba Walking_8: -2578093862068254103
+      Jabba Walking_9: 1230655984377252044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

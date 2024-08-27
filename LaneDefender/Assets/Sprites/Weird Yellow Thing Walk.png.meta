@@ -535,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Weird Yellow Thing Walk_0: -6543279331256932611
+      Weird Yellow Thing Walk_1: 2421249144102511327
+      Weird Yellow Thing Walk_10: 1399260497681663427
+      Weird Yellow Thing Walk_11: 3239180239957050371
+      Weird Yellow Thing Walk_12: -3681544225101722871
+      Weird Yellow Thing Walk_13: -8200236097732297973
+      Weird Yellow Thing Walk_14: 2177537262254937881
+      Weird Yellow Thing Walk_15: 4386517269122361670
+      Weird Yellow Thing Walk_2: 5302776192137820861
+      Weird Yellow Thing Walk_3: -3172153932161576816
+      Weird Yellow Thing Walk_4: 8859501995608984353
+      Weird Yellow Thing Walk_5: 3881870809507179621
+      Weird Yellow Thing Walk_6: 1494491838722616165
+      Weird Yellow Thing Walk_7: 3091572331750832840
+      Weird Yellow Thing Walk_8: 2113557962437228330
+      Weird Yellow Thing Walk_9: -2048814041223763813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

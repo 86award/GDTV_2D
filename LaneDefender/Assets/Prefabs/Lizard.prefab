@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a3356e69249141b6aa844bc67f412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  livesToSubtract: 10
 --- !u!114 &4359276429439569271
 MonoBehaviour:
   m_ObjectHideFlags: 0

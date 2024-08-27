@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AttackerHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] int startingHealth;
     [SerializeField] private int health;
@@ -24,6 +24,7 @@ public class AttackerHealth : MonoBehaviour
 
     private void TriggerCollisionVFX()
     {
+        if (!collisionVFX) return;
         GameObject vfxObject = Instantiate(collisionVFX, transform.position, transform.rotation);
         Destroy(vfxObject, 1f);
     }

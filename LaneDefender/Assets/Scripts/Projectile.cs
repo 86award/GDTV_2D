@@ -15,11 +15,11 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Attacker")
+        if (collision.GetComponent<Attacker>())
         {
             Destroy(gameObject);
             //Instantiate(collisionFX, collision.transform.position, collision.transform.rotation);
-            collision.GetComponent<AttackerHealth>().DealDamage(projectileDmg);
+            collision.GetComponent<Health>().DealDamage(projectileDmg);
         }
     }
 }

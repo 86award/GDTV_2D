@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 133
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -186,10 +186,10 @@ TextureImporter:
       name: Fox Eating_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 425
-        width: 99
-        height: 101
+        x: 0
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: Fox Eating_1
       rect:
         serializedVersion: 2
-        x: 163
-        y: 425
-        width: 99
-        height: 101
+        x: 153
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: Fox Eating_2
       rect:
         serializedVersion: 2
-        x: 316
-        y: 425
-        width: 99
-        height: 102
+        x: 306
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: Fox Eating_3
       rect:
         serializedVersion: 2
-        x: 469
-        y: 424
-        width: 99
-        height: 103
+        x: 459
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: Fox Eating_4
       rect:
         serializedVersion: 2
-        x: 623
-        y: 423
-        width: 98
-        height: 106
+        x: 612
+        y: 417
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: Fox Eating_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 283
-        width: 98
-        height: 107
+        x: 0
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: Fox Eating_6
       rect:
         serializedVersion: 2
-        x: 164
-        y: 283
-        width: 98
-        height: 109
+        x: 153
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +340,10 @@ TextureImporter:
       name: Fox Eating_7
       rect:
         serializedVersion: 2
-        x: 316
-        y: 284
-        width: 99
-        height: 108
+        x: 306
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: Fox Eating_8
       rect:
         serializedVersion: 2
-        x: 469
-        y: 285
-        width: 99
-        height: 107
+        x: 459
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,10 +384,10 @@ TextureImporter:
       name: Fox Eating_9
       rect:
         serializedVersion: 2
-        x: 622
-        y: 286
-        width: 99
-        height: 106
+        x: 612
+        y: 278
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,10 +406,10 @@ TextureImporter:
       name: Fox Eating_10
       rect:
         serializedVersion: 2
-        x: 10
-        y: 147
-        width: 99
-        height: 106
+        x: 0
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: Fox Eating_11
       rect:
         serializedVersion: 2
-        x: 163
-        y: 147
-        width: 99
-        height: 106
+        x: 153
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,10 +450,10 @@ TextureImporter:
       name: Fox Eating_12
       rect:
         serializedVersion: 2
-        x: 316
-        y: 147
-        width: 99
-        height: 106
+        x: 306
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: Fox Eating_13
       rect:
         serializedVersion: 2
-        x: 469
-        y: 146
-        width: 99
-        height: 107
+        x: 459
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,10 +494,10 @@ TextureImporter:
       name: Fox Eating_14
       rect:
         serializedVersion: 2
-        x: 623
-        y: 145
-        width: 98
-        height: 108
+        x: 612
+        y: 139
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,10 +516,10 @@ TextureImporter:
       name: Fox Eating_15
       rect:
         serializedVersion: 2
-        x: 11
-        y: 5
-        width: 98
-        height: 109
+        x: 0
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +538,10 @@ TextureImporter:
       name: Fox Eating_16
       rect:
         serializedVersion: 2
-        x: 164
-        y: 5
-        width: 98
-        height: 107
+        x: 153
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,10 +560,10 @@ TextureImporter:
       name: Fox Eating_17
       rect:
         serializedVersion: 2
-        x: 316
-        y: 6
-        width: 99
-        height: 106
+        x: 306
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: Fox Eating_18
       rect:
         serializedVersion: 2
-        x: 469
-        y: 7
-        width: 99
-        height: 103
+        x: 459
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +604,10 @@ TextureImporter:
       name: Fox Eating_19
       rect:
         serializedVersion: 2
-        x: 622
-        y: 8
-        width: 99
-        height: 102
+        x: 612
+        y: 0
+        width: 153
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,7 +626,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c1d5ecd3f3dbc0c49885c004756c86a1
     internalID: 0
     vertices: []
     indices: 
@@ -635,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox Eating_0: 4523694527636890326
+      Fox Eating_1: 5447948022673283725
+      Fox Eating_10: -1779816809531929865
+      Fox Eating_11: -1513014696461789594
+      Fox Eating_12: 5840083829643320373
+      Fox Eating_13: -8893334408548853788
+      Fox Eating_14: 5448528828344436692
+      Fox Eating_15: 5600851936528198718
+      Fox Eating_16: -6698832738377866176
+      Fox Eating_17: -2616878455912080950
+      Fox Eating_18: -433965125333269493
+      Fox Eating_19: 781529429376668191
+      Fox Eating_2: 7428705937205978307
+      Fox Eating_3: 3306208647587707286
+      Fox Eating_4: 4667942824762666018
+      Fox Eating_5: -4964044176242952792
+      Fox Eating_6: -2351908859522475459
+      Fox Eating_7: 9049968214371932315
+      Fox Eating_8: 337936086056860190
+      Fox Eating_9: 8247255084812329007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
