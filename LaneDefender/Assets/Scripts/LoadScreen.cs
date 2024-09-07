@@ -9,7 +9,7 @@ public class LoadScreen : MonoBehaviour
         StartCoroutine(Load());
     }
 
-    IEnumerator Load()
+    public IEnumerator Load()
     {
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(1);
