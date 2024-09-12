@@ -8,7 +8,6 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] private float maxSpawnDelay = 5f;
     [SerializeField] private Attacker[] attackerArray;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
         while (isSpawning)

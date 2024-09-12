@@ -47,16 +47,8 @@ public class LivesDisplay : MonoBehaviour
 
         if (baseArea.Lives <= 0)
         {
-            //StartCoroutine(Load());
-            Load();
+            FindAnyObjectByType<LevelController>().HandleLoseCondition();
         }
-    }
-
-    //IEnumerator Load()
-    private void Load()
-    {
-        //yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(1);
     }
 }
 

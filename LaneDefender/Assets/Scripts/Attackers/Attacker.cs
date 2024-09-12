@@ -9,13 +9,20 @@ public class Attacker : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<LevelController>().AttackerSpawned();
+        LevelController levelController = GetComponent<LevelController>();
+        if (levelController != null)
+        {
+            levelController.AttackerSpawned();
+        }
     }
 
     private void OnDestroy()
     {
-
-        GetComponent<LevelController>().AttackerDestroyed();
+        LevelController levelController = GetComponent<LevelController>();
+        if (levelController != null)
+        {
+            levelController.AttackerDestroyed();
+        }
     }
 
     void Update()
