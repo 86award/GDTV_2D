@@ -1,15 +1,32 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SpawnDefender : MonoBehaviour
 {
+    [SerializeField] GameObject defenderParent;
     Defender defender;
     BoxCollider2D areaCollider;
+
+    const string DEFENDER_PARENT_NAME = "Defenders";
 
     private void Awake()
     {
         areaCollider = GetComponent<BoxCollider2D>();
+    }
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
     }
 
     //There's a magic number here for the z co-ord
@@ -60,7 +77,11 @@ public class SpawnDefender : MonoBehaviour
     {
 
         Vector3 targetGrid = SpawnLocationAsGridRef(spawnLocation);
+        Defender defender = this.defender;
         Instantiate(defender, targetGrid, Quaternion.identity);
+
+        //new as 14/09
+        defender.transform.parent = defenderParent.transform;
     }
     
     private Vector3 SpawnLocationAsGridRef(Vector3 screenClickLocation)
