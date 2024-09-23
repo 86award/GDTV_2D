@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Processors;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,25 +11,45 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     float baseGravityValue;
+    bool isAlive;
 
     [SerializeField] float runSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] float climbSpeed;
+    [SerializeField] float deathKnock;
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         baseGravityValue = myRigidbody.gravityScale;
+        isAlive = true;
     }
 
     void Update()
     {
-        Run();
-        FlipSprite();
-        Climb();
+        if (isAlive)
+        {
+            Run();
+            FlipSprite();
+            Climb(); 
+        }
     }
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 11)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        isAlive = false;
+        myAnimator.SetTrigger("Dead");
+        myRigidbody.linearVelocityY = deathKnock;
+    }
+
     private void Run()
     {
         Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidbody.linearVelocityY);
@@ -40,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Climb()
     {
-        if (GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if (GetComponent<CapsuleCollider2D>().IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
             myRigidbody.gravityScale = 0f;
             Vector2 climbVelocity = new Vector2(myRigidbody.linearVelocityX, moveInput.y * climbSpeed);
@@ -69,15 +90,22 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (value.isPressed && GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (isAlive)
         {
-            Debug.Log(myRigidbody.linearVelocity.x);
-            //myRigidbody.linearVelocity += new Vector2(0f, jumpForce); // this works
-            //myRigidbody.AddForce(new Vector2(0f, jumpForce)); // this works but requires much greater force i.e. 500
-            myRigidbody.linearVelocityY = jumpForce; // even at 500 this doesn't work
-            // It's because I was using x and not y 🙄
-            Debug.Log($"After pressing jump, .x is " + myRigidbody.linearVelocity.x);
-            Debug.Log($"After pressing jump, the vector is " + myRigidbody.linearVelocity);
+            // this prevents wall jump and jumping off of ladders/climbables 
+            if (GetComponent<BoxCollider2D>().IsTouchingLayers(LayerMask.GetMask("Ground")))
+            {
+                if (value.isPressed && GetComponent<CapsuleCollider2D>().IsTouchingLayers(LayerMask.GetMask("Ground")))
+                {
+                    Debug.Log(myRigidbody.linearVelocity.x);
+                    //myRigidbody.linearVelocity += new Vector2(0f, jumpForce); // this works
+                    //myRigidbody.AddForce(new Vector2(0f, jumpForce)); // this works but requires much greater force i.e. 500
+                    myRigidbody.linearVelocityY = jumpForce; // even at 500 this doesn't work
+                                                             // It's because I was using x and not y 🙄
+                    Debug.Log($"After pressing jump, .x is " + myRigidbody.linearVelocity.x);
+                    Debug.Log($"After pressing jump, the vector is " + myRigidbody.linearVelocity);
+                }
+            } 
         }
     }
 }
