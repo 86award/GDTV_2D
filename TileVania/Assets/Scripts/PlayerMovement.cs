@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] float climbSpeed;
     [SerializeField] float deathKnock;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
 
     void Start()
     {
@@ -32,22 +34,21 @@ public class PlayerMovement : MonoBehaviour
         {
             Run();
             FlipSprite();
-            Climb(); 
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 11)
-        {
+            Climb();
             Die();
         }
     }
 
     private void Die()
     {
-        isAlive = false;
-        myAnimator.SetTrigger("Dead");
-        myRigidbody.linearVelocityY = deathKnock;
+        if (myRigidbody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dead");
+            myRigidbody.linearVelocityY = deathKnock;
+
+            FindAnyObjectByType<GameSession>().ProcessPlayerDeath();
+        }        
     }
 
     private void Run()
@@ -83,6 +84,12 @@ public class PlayerMovement : MonoBehaviour
         if (playerHasVelocity) transform.localScale = new Vector2 (MathF.Sign(myRigidbody.linearVelocity.x), 1f);
     }
 
+
+    void OnAttack(InputValue value)
+    {
+        Instantiate(bullet, gun.position, transform.rotation);
+    }
+    
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -97,13 +104,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (value.isPressed && GetComponent<CapsuleCollider2D>().IsTouchingLayers(LayerMask.GetMask("Ground")))
                 {
-                    Debug.Log(myRigidbody.linearVelocity.x);
                     //myRigidbody.linearVelocity += new Vector2(0f, jumpForce); // this works
                     //myRigidbody.AddForce(new Vector2(0f, jumpForce)); // this works but requires much greater force i.e. 500
                     myRigidbody.linearVelocityY = jumpForce; // even at 500 this doesn't work
                                                              // It's because I was using x and not y 🙄
-                    Debug.Log($"After pressing jump, .x is " + myRigidbody.linearVelocity.x);
-                    Debug.Log($"After pressing jump, the vector is " + myRigidbody.linearVelocity);
                 }
             } 
         }
