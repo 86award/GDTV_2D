@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece4a7c46151245419333fe5d9a38b19, type: 3}
+  m_Name: CharacterSO_Leoric
+  m_EditorClassIdentifier: 
+  _characterName: Leoric Wrynn
+  _characterPortrait: {fileID: 21300000, guid: 85103eb03e51b3c41b239e1a0a19e389, type: 3}
+  characterBackgound: Leoric is a Far Traveler, thrown into a different reality by
+    a spell and a vindictive demonic entity. He arrived with little clue as to what
+    and how things were going but has managed to pick up a few things since...
+  _abilityPointsToSpend: 5
+  fightAttribute: 0
+  magicAttribute: 0
+  healthAttribute: 0
+  inventory:
+  - {fileID: 11400000, guid: cfb244e1bc4f3c54dacf2010fc897f0c, type: 2}
+  - {fileID: 11400000, guid: 9535347e2c2fdec4b81cb2044a230dd9, type: 2}
+  - {fileID: 11400000, guid: 9535347e2c2fdec4b81cb2044a230dd9, type: 2}
